@@ -1,0 +1,17 @@
+{
+    "Name": "BIOS 278 Lab 1 Dataset",
+    "BIDSVersion": "1.9.0",
+    "DatasetType": "raw",
+    "License": "CC0",
+    "Authors": [
+        "Tom Stone"
+    ],
+    "Acknowledgements": "Data provided by BIOS 278 course",
+    "Funding": [
+        "Stanford University"
+    ],
+    "ReferencesAndLinks": [
+        "https://github.com/DimuthuHemachandra/BIOS_278"
+    ],
+    "DatasetDOI": ""
+}

@@ -1,0 +1,65 @@
+2026-11-10 16:09:59.689 - INFO     - dcm2bids.main | --- dcm2bids start ---
+2026-11-10 16:09:59.689 - INFO     - dcm2bids.main | Running the following command: /Users/tomstone/miniforge3/envs/dcm2bids_env/bin/dcm2bids -d dcm2bids_tutorial/bids_project/sourcedata/dcm_qa_nih/In/ -p ID01 -c dcm2bids_tutorial/bids_project/code/dcm2bids_config.json --auto_extract_entities
+2026-11-10 16:09:59.699 - INFO     - dcm2bids.main | OS version: macOS-15.8.2-arm64-arm-64bit-Mach-O
+2026-11-10 16:09:59.700 - INFO     - dcm2bids.main | Python version: 3.15.2 | packaged by conda-forge | (main, Oct 26 2026, 11:33:32) [Clang 21.1.8 ]
+2026-11-10 16:09:59.700 - INFO     - dcm2bids.main | dcm2bids version: 3.3.1
+2026-11-10 16:09:59.726 - INFO     - dcm2bids.main | dcm2niix version: v1.0.20261029
+2026-11-10 16:09:59.726 - INFO     - dcm2bids.main | Checking for software update
+2026-11-10 16:09:59.726 - DEBUG    - tools.check_latest | Version check: name=dcm2bids, current=3.3.1, repo=UNFmontreal/Dcm2Bids, log_dir=/Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/log
+2026-11-10 16:09:59.727 - DEBUG    - tools.check_latest | Version check: found cached entry for UNFmontreal/Dcm2Bids (age=62.3s, ttl=86400s)
+2026-11-10 16:09:59.727 - DEBUG    - tools.check_latest | Version check: using cached latest=3.3.1 for dcm2bids
+2026-11-10 16:09:59.727 - INFO     - tools.check_latest | Currently using the latest version of dcm2bids.
+2026-11-10 16:09:59.751 - DEBUG    - tools.check_latest | Version check: name=dcm2niix, current=v1.0.20261029, repo=rordenlab/dcm2niix, log_dir=/Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/log
+2026-11-10 16:09:59.751 - DEBUG    - tools.check_latest | Version check: found cached entry for rordenlab/dcm2niix (age=61.9s, ttl=86400s)
+2026-11-10 16:09:59.751 - DEBUG    - tools.check_latest | Version check: using cached latest=v1.0.20261029 for dcm2niix
+2026-11-10 16:09:59.751 - INFO     - tools.check_latest | Currently using the latest version of dcm2niix.
+2026-11-10 16:09:59.751 - INFO     - schema._resolve_bids_version_label | No --bids_version provided; using 'default' BIDS spec (version=v1.11.1) for reproducible behavior.
+2026-11-10 16:09:59.869 - DEBUG    - tools.has_internet | has_internet status: 200
+2026-11-10 16:09:59.869 - INFO     - schema._check_latest_stable | Checking for BIDS update
+2026-11-10 16:09:59.869 - DEBUG    - schema._check_latest_stable | Checking remote 'stable' BIDS spec to see if a newer version is available.
+2026-11-10 16:09:59.870 - DEBUG    - schema._schema_cached_entry_info | Schema cache: alias 'stable' cached at 2026-11-11T00:08:58+00:00 (age=61.9s, fresh=True, ttl=604800s)
+2026-11-10 16:09:59.874 - DEBUG    - schema._get_schema_from_cache | Verifying cached alias BIDS schema for version 'stable' from /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/log/bids_schema_stable.json.
+2026-11-10 16:09:59.874 - DEBUG    - schema._check_latest_stable | default BIDS version: v1.11.1; remote 'stable' version: 1.11.2
+2026-11-10 16:09:59.874 - WARNING  - schema._check_latest_stable | A newer 'stable' BIDS specification (1.11.2) is available than the default version (v1.11.1). The default schema is still used for this run. Consider updating using --bids_version 1.11.2.
+2026-11-10 16:09:59.877 - INFO     - schema._load_default_schema | Loading default BIDS schema (version=v1.11.1) from /Users/tomstone/miniforge3/envs/dcm2bids_env/lib/python3.15/site-packages/dcm2bids/utils/schema_data/bids_schema_v1.11.1.json.
+2026-11-10 16:09:59.877 - INFO     - dcm2bids.main | participant: sub-ID01
+2026-11-10 16:09:59.877 - INFO     - dcm2bids.main | config: /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/dcm2bids_tutorial/bids_project/code/dcm2bids_config.json
+2026-11-10 16:09:59.877 - INFO     - dcm2bids.main | BIDS directory: /Users/tomstone/Documents/Courses/2026_4Fall/BioS278
+2026-11-10 16:09:59.877 - INFO     - dcm2bids.main | Auto extract entities: True
+2026-11-10 16:09:59.877 - INFO     - dcm2bids.main | Reorder entities: True
+2026-11-10 16:09:59.877 - INFO     - dcm2bids.main | Validate BIDS: False
+
+2026-11-10 16:09:59.878 - INFO     - utils.run_shell_command | Running: dcm2niix -b y -ba y -z y -f %3s_%f_%p_%t -o /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/sub-ID01 dcm2bids_tutorial/bids_project/sourcedata/dcm_qa_nih/In
+2026-11-10 16:10:00.29 - INFO     - dcm2niix_gen.execute | Log from dcm2niix execution
+2026-11-10 16:10:00.29 - WARNING  - dcm2niix_gen.execute | Chris Rorden's dcm2niiX version v1.0.20261029  (JP2:OpenJPEG) (JP-LS:CharLS) Clang21.0.0 ARM (64-bit MacOS)
+Found 608 DICOM file(s)
+Convert 150 DICOM as /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/sub-ID01/006_In_DCM2NIIX_regression_test_20180918114023 (64x64x15x10)
+Convert 2 DICOM as /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/sub-ID01/005_In_EPI_PE=RL_20180918121230 (72x72x5x2)
+Convert 150 DICOM as /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/sub-ID01/004_In_DCM2NIIX_regression_test_20180918114023 (64x64x15x10)
+Warning: Issue870: Slice timing range of first volume: range 0..1930 ms, TA=1930 ms, TR=2435.37 ms
+Warning: Issue870: Slice timing range of 2nd volume: TA=1932.5 ms, TR=2435.37 ms
+Convert 2 DICOM as /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/sub-ID01/004_In_EPI_PE=PA_20180918121230 (72x72x5x2)
+Convert 150 DICOM as /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/sub-ID01/007_In_DCM2NIIX_regression_test_20180918114023 (64x64x15x10)
+Convert 2 DICOM as /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/sub-ID01/006_In_EPI_PE=LR_20180918121230 (72x72x5x2)
+Convert 2 DICOM as /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/sub-ID01/003_In_EPI_PE=AP_20180918121230 (72x72x5x2)
+Convert 150 DICOM as /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/sub-ID01/005_In_DCM2NIIX_regression_test_20180918114023 (64x64x15x10)
+Conversion required 0.128600 seconds (0.128400 for core code).
+
+2026-11-10 16:10:00.31 - INFO     - sidecar.build_acquisitions | SIDECAR PAIRING
+2026-11-10 16:10:00.31 - WARNING  - sidecar.searchDcmTagEntity | Entities {'task'} have not been found for datatype 'func' and suffix 'bold'.
+2026-11-10 16:10:00.31 - INFO     - sidecar.build_acquisitions | sub-ID01_bold  <-  004_In_DCM2NIIX_regression_test_20180918114023
+2026-11-10 16:10:00.32 - INFO     - sidecar.build_acquisitions | No Pairing  <-  005_In_DCM2NIIX_regression_test_20180918114023
+2026-11-10 16:10:00.32 - INFO     - sidecar.build_acquisitions | No Pairing  <-  006_In_DCM2NIIX_regression_test_20180918114023
+2026-11-10 16:10:00.32 - INFO     - sidecar.build_acquisitions | No Pairing  <-  007_In_DCM2NIIX_regression_test_20180918114023
+2026-11-10 16:10:00.32 - INFO     - sidecar.build_acquisitions | sub-ID01_epi  <-  003_In_EPI_PE=AP_20180918121230
+2026-11-10 16:10:00.32 - INFO     - sidecar.build_acquisitions | sub-ID01_epi  <-  004_In_EPI_PE=PA_20180918121230
+2026-11-10 16:10:00.32 - INFO     - sidecar.build_acquisitions | No Pairing  <-  005_In_EPI_PE=RL_20180918121230
+2026-11-10 16:10:00.32 - INFO     - sidecar.build_acquisitions | No Pairing  <-  006_In_EPI_PE=LR_20180918121230
+2026-11-10 16:10:00.32 - INFO     - sidecar.find_runs | sub-ID01/fmap/sub-ID01_epi has 2 runs
+2026-11-10 16:10:00.32 - INFO     - sidecar.find_runs | Adding run information to the acquisition
+2026-11-10 16:10:00.32 - INFO     - dcm2bids_gen.run | Moving acquisitions into BIDS folder "/Users/tomstone/Documents/Courses/2026_4Fall/BioS278/sub-ID01".
+
+2026-11-10 16:10:00.33 - INFO     - io.update_participants_tsv | Creating new participants.tsv file
+2026-11-10 16:10:00.33 - INFO     - io.update_participants_tsv | Adding participant 'sub-ID01' to participants.tsv
+2026-11-10 16:10:00.33 - INFO     - dcm2bids.main | Logs saved in /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/log/sub-ID01_20261110-160959.log
+2026-11-10 16:10:00.33 - INFO     - dcm2bids.main | --- dcm2bids end ---

@@ -1,0 +1,38 @@
+2026-11-10 16:08:57.389 - INFO     - dcm2bids.main | --- dcm2bids start ---
+2026-11-10 16:08:57.389 - INFO     - dcm2bids.main | Running the following command: /Users/tomstone/miniforge3/envs/dcm2bids_env/bin/dcm2bids -d dcm2bids_tutorial/bids_project/sourcedata/dcm_qa_nih/In/ -p ID01 -c code/dcm2bids_config.json --auto_extract_entities
+2026-11-10 16:08:57.398 - INFO     - dcm2bids.main | OS version: macOS-15.8.2-arm64-arm-64bit-Mach-O
+2026-11-10 16:08:57.398 - INFO     - dcm2bids.main | Python version: 3.15.2 | packaged by conda-forge | (main, Oct 26 2026, 11:33:32) [Clang 21.1.8 ]
+2026-11-10 16:08:57.398 - INFO     - dcm2bids.main | dcm2bids version: 3.3.1
+2026-11-10 16:08:57.422 - INFO     - dcm2bids.main | dcm2niix version: v1.0.20261029
+2026-11-10 16:08:57.422 - INFO     - dcm2bids.main | Checking for software update
+2026-11-10 16:08:57.422 - DEBUG    - tools.check_latest | Version check: name=dcm2bids, current=3.3.1, repo=UNFmontreal/Dcm2Bids, log_dir=/Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/log
+2026-11-10 16:08:57.422 - DEBUG    - tools.check_latest | Version check: no cached entry for UNFmontreal/Dcm2Bids in /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/log
+2026-11-10 16:08:57.422 - DEBUG    - tools.check_latest | Version check: cache miss or unavailable for dcm2bids; checking internet.
+2026-11-10 16:08:57.542 - DEBUG    - tools.has_internet | has_internet status: 200
+2026-11-10 16:08:57.542 - DEBUG    - tools.check_latest | Version check: internet OK; querying GitHub latest for UNFmontreal/Dcm2Bids
+2026-11-10 16:08:57.819 - DEBUG    - tools.check_latest | Version check: updated cache for UNFmontreal/Dcm2Bids with latest=3.3.1
+2026-11-10 16:08:57.819 - INFO     - tools.check_latest | Currently using the latest version of dcm2bids.
+2026-11-10 16:08:57.861 - DEBUG    - tools.check_latest | Version check: name=dcm2niix, current=v1.0.20261029, repo=rordenlab/dcm2niix, log_dir=/Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/log
+2026-11-10 16:08:57.862 - DEBUG    - tools.check_latest | Version check: no cached entry for rordenlab/dcm2niix in /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/log
+2026-11-10 16:08:57.862 - DEBUG    - tools.check_latest | Version check: cache miss or unavailable for dcm2niix; checking internet.
+2026-11-10 16:08:57.988 - DEBUG    - tools.has_internet | has_internet status: 200
+2026-11-10 16:08:57.989 - DEBUG    - tools.check_latest | Version check: internet OK; querying GitHub latest for rordenlab/dcm2niix
+2026-11-10 16:08:58.223 - DEBUG    - tools.check_latest | Version check: updated cache for rordenlab/dcm2niix with latest=v1.0.20261029
+2026-11-10 16:08:58.224 - INFO     - tools.check_latest | Currently using the latest version of dcm2niix.
+2026-11-10 16:08:58.224 - INFO     - schema._resolve_bids_version_label | No --bids_version provided; using 'default' BIDS spec (version=v1.11.1) for reproducible behavior.
+2026-11-10 16:08:58.340 - DEBUG    - tools.has_internet | has_internet status: 200
+2026-11-10 16:08:58.341 - INFO     - schema._check_latest_stable | Checking for BIDS update
+2026-11-10 16:08:58.341 - DEBUG    - schema._check_latest_stable | Checking remote 'stable' BIDS spec to see if a newer version is available.
+2026-11-10 16:08:58.491 - DEBUG    - tools.has_internet | has_internet status: 200
+2026-11-10 16:08:58.492 - INFO     - schema._download_schema | Downloading BIDS schema from https://bids-specification.readthedocs.io/en/stable/schema.json
+2026-11-10 16:08:58.662 - INFO     - schema._get_schema_from_remote | Saved BIDS schema for version 'stable' to /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/log/bids_schema_stable.json.
+2026-11-10 16:08:58.662 - DEBUG    - schema._check_latest_stable | default BIDS version: v1.11.1; remote 'stable' version: 1.11.2
+2026-11-10 16:08:58.662 - WARNING  - schema._check_latest_stable | A newer 'stable' BIDS specification (1.11.2) is available than the default version (v1.11.1). The default schema is still used for this run. Consider updating using --bids_version 1.11.2.
+2026-11-10 16:08:58.666 - INFO     - schema._load_default_schema | Loading default BIDS schema (version=v1.11.1) from /Users/tomstone/miniforge3/envs/dcm2bids_env/lib/python3.15/site-packages/dcm2bids/utils/schema_data/bids_schema_v1.11.1.json.
+2026-11-10 16:08:58.666 - INFO     - dcm2bids.main | participant: sub-ID01
+2026-11-10 16:08:58.666 - INFO     - dcm2bids.main | config: /Users/tomstone/Documents/Courses/2026_4Fall/BioS278/code/dcm2bids_config.json
+2026-11-10 16:08:58.666 - INFO     - dcm2bids.main | BIDS directory: /Users/tomstone/Documents/Courses/2026_4Fall/BioS278
+2026-11-10 16:08:58.666 - INFO     - dcm2bids.main | Auto extract entities: True
+2026-11-10 16:08:58.666 - INFO     - dcm2bids.main | Reorder entities: True
+2026-11-10 16:08:58.666 - INFO     - dcm2bids.main | Validate BIDS: False
+

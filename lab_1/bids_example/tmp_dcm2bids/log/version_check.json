@@ -1,0 +1,17 @@
+{
+    "UNFmontreal/Dcm2Bids": {
+        "latest": "3.3.1",
+        "timestamp": 1794355737.4227781
+    },
+    "rordenlab/dcm2niix": {
+        "latest": "v1.0.20261029",
+        "timestamp": 1794355737.862198
+    },
+    "schema": {
+        "stable": {
+            "path": "/Users/tomstone/Documents/Courses/2026_4Fall/BioS278/tmp_dcm2bids/log/bids_schema_stable.json",
+            "bids_version": "1.11.2",
+            "timestamp": "2026-11-11T00:08:58+00:00"
+        }
+    }
+}

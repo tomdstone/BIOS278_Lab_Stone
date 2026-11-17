@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-11-17T15:18:46.711918",
+  "script_version": "1.0.0",
+  "input_file": "/Users/tomstone/Documents/Courses/2026_4Fall/ReproducibleBrainAnalysis_BioS278/BIOS278_Lab_Stone/lab_2/scan1.nii.gz",
+  "image_shape": [
+    256,
+    132,
+    256
+  ],
+  "image_dtype": "int16",
+  "voxel_size": [
+    "0.8594",
+    "1.4999962",
+    "0.8594"
+  ],
+  "software_versions": {
+    "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 22:55:54) [Clang 19.1.7 ]",
+    "nibabel": "5.2.0",
+    "nilearn": "0.10.3",
+    "matplotlib": "3.8.2"
+  }
+}
